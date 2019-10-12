@@ -113,5 +113,13 @@
 				});
 
 			});
+			$(document).ready(function(){
+			  $("#grade-toggle").click(function(){
+			    $("#target").toggle(500);
+					$(this).text(function(i,next){
+						return next==="View Grades"?"View less":"View Grades";
+					});
+			  });
+			});
 
 })(jQuery);
